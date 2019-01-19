@@ -1,0 +1,94 @@
+.main {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, .6);
+    border-radius: 4px;
+    min-height: 480px;
+}
+
+.dialog {
+    margin: 10px 0px;
+    display: flex;
+    min-height: 60px;
+}
+
+.dialog_item {
+    align-self: center;
+    display: flex;
+}
+
+.dialog_item_icon {
+    padding: 10px 8px;
+    align-self: flex-start;
+}
+
+.dialog_item_content {
+    align-self: center;
+    padding: 10px;
+    background-color: #AEEEEE;
+    border-radius: 12px;
+}
+
+.dialog_mine {
+    .dialog()
+}
+
+.dialog_other {
+    .dialog();
+    flex-direction: row-reverse;
+}
+
+.input_dialog {
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    line-height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input_dialog div {
+    align-self: flex-end;
+    margin-bottom: 4px;
+}
+
+.input_icon {
+    width: 60px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.input_content {
+    margin-left: 0px;
+    margin-right: 10px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: stretch;
+}
+
+.input_content textarea {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 32px;
+}
+
+.input_action {
+    width: 80px;
+    font-size: 24px;
+}
+
+.input_dialog button {
+    background-color: #54FF9F;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ffffff;
+    height: 42px;
+}

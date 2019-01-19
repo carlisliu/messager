@@ -12,10 +12,12 @@ export default {
       dll: false,
       routes: {
         exclude: [
-        
           /components\//,
         ],
       },
     }],
   ],
+  lessLoaderOptions: {
+    javascriptEnabled: true,
+  },
 }

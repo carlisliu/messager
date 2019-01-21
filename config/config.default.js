@@ -1,5 +1,7 @@
 'use strict';
 
+const path = require('path');
+
 module.exports = appInfo => {
   const config = exports = {};
 
@@ -8,6 +10,19 @@ module.exports = appInfo => {
 
   // add your config here
   config.middleware = [];
+
+  config.development = {
+    overrideDefault: true,
+    watchDirs: [
+      'app/controller',
+      'app/router',
+      'app/view',
+      'app/service',
+      'config',
+      'mocks',
+      'mocks_proxy',
+    ].map((dir) => path.join(appInfo.baseDir, dir))
+  }
 
   return config;
 };

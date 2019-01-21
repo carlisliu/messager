@@ -26,7 +26,7 @@ export default class InstantApp extends React.Component {
                 <div className={`${style.dialog_other}`}>
                     <div className={`${style.dialog_item}`}>
                         <div className={`${style.dialog_item_content}`}>
-                            content
+                            content  hello therehello 
                         </div>
                         <div className={`${style.dialog_item_icon}`}>
                             <Head />
@@ -51,7 +51,7 @@ export default class InstantApp extends React.Component {
                     +
                 </div>
                 <div className={`${style.input_content}`}>
-                    <textarea rows={2} />
+                    <textarea rows={1} />
                 </div>
                 <div className={`${style.input_action}`}>
                     <button>Send</button>
